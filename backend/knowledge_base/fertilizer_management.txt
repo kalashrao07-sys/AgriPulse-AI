@@ -1,0 +1,82 @@
+FERTILIZER AND NUTRIENT MANAGEMENT FOR INDIAN AGRICULTURE
+
+IMPORTANCE OF SOIL TESTING
+Always test soil before applying fertilizers.
+Test parameters: pH, N, P, K, organic carbon, micronutrients.
+Recommended labs: Soil Testing Labs at Krishi Vigyan Kendra (KVK) or State Agriculture Department.
+Frequency: Once every 2-3 years or before every major crop.
+
+MAJOR NUTRIENTS AND THEIR ROLES
+
+Nitrogen (N)
+Role: Promotes vegetative growth, leaf development, protein synthesis.
+Deficiency symptoms: Yellowing of older/lower leaves (chlorosis), stunted growth.
+Excess symptoms: Dark green lush growth, delayed flowering, increased disease susceptibility.
+Sources: Urea (46% N), DAP (18% N), Ammonium Sulphate (21% N)
+Application: Split applications are most efficient. Apply in 3 splits (Basal, 30 days, 60 days).
+
+Phosphorus (P)
+Role: Root development, flowering, energy transfer (ATP), seed formation.
+Deficiency symptoms: Purple/reddish coloration of leaves and stems, poor root development.
+Excess: Can lock out micronutrients. Apply based on soil test.
+Sources: DAP (46% P2O5), SSP (16% P2O5), Rock Phosphate
+Application: Apply mostly as basal dose (at planting). Less mobile in soil.
+
+Potassium (K)
+Role: Fruit quality, disease resistance, water regulation, enzyme activation.
+Deficiency symptoms: Scorching/browning of leaf margins, poor fruit quality.
+Sources: MOP/Muriate of Potash (60% K2O), SOP/Sulphate of Potash (50% K2O)
+Application: Apply as basal + one top dressing at fruiting stage.
+
+SECONDARY AND MICRONUTRIENTS
+
+Calcium (Ca)
+Essential for cell wall development and fruit quality.
+Deficiency in tomato causes Blossom End Rot (BER) — dark leathery patch at fruit bottom.
+Sources: Calcium Nitrate (foliar), Lime (soil application).
+Application: Spray Calcium Nitrate @ 1% at fruiting stage.
+
+Magnesium (Mg)
+Deficiency causes interveinal chlorosis (yellowing between leaf veins while veins stay green).
+Sources: Magnesium Sulphate (Epsom Salt) @ 10g/L foliar spray.
+
+Zinc (Zn)
+Deficiency: Small leaves, short internodes, brown/bronze spots.
+Sources: Zinc Sulphate @ 25kg/ha soil application, or foliar @ 5g/L.
+
+Boron (B)
+Deficiency in tomato: Cracked fruits, tip burn, hollow stems.
+Sources: Borax @ 1g/L foliar spray.
+
+FERTILIZER SCHEDULE FOR TOMATO (per acre)
+At transplanting: FYM 4 tonnes + DAP 40kg + MOP 15kg
+At 30 days: Urea 10kg
+At 45 days (flowering): Foliar 19:19:19 NPK @ 5g/L + Calcium Nitrate @ 10g/L
+At 60 days (fruiting): MOP 10kg + Foliar Calcium Nitrate @ 10g/L
+At 75 days: Foliar 0:52:34 (Mono Potassium Phosphate) @ 5g/L
+
+FERTILIZER SCHEDULE FOR WHEAT (per acre)
+Basal: DAP 50kg + MOP 10kg
+At 25 days (crown root initiation): Urea 25kg
+At 45 days (tillering): Urea 25kg
+Foliar at grain fill: Urea @ 1% solution
+
+ORGANIC FARMING OPTIONS
+Vermicompost: 2-3 tonnes/acre as basal. Improves soil health.
+Bio-fertilizers:
+- Rhizobium (for legumes): Fixes atmospheric nitrogen
+- PSB (Phosphate Solubilizing Bacteria): Makes phosphorus available
+- Azotobacter: Free-living nitrogen fixation
+Neem cake: 100kg/acre. Repels nematodes, adds nutrients.
+Panchagavya: 3% spray. Improves plant immunity and microbial activity.
+
+FERTIGATION THROUGH DRIP SYSTEM
+Advantages: Precise placement, reduces losses, saves fertilizer 20-30%.
+Water-soluble fertilizers: Urea, Potassium Nitrate (13:0:45), Potassium Sulphate, Calcium Nitrate.
+Do not mix Calcium with Phosphate or Sulfate — forms precipitate.
+EC (Electrical Conductivity) of fertigation solution: 1.5-2.5 mS/cm for most vegetables.
+
+SOIL pH MANAGEMENT
+Acidic soil (pH < 6): Apply agricultural lime (Calcium Carbonate) @ 200-400 kg/acre.
+Alkaline soil (pH > 7.5): Apply Gypsum @ 100-200 kg/acre. Use ammoniacal fertilizers.
+Most vegetables grow best at pH 6.0-7.0.

@@ -1,0 +1,108 @@
+CROP DISEASES AND PEST MANAGEMENT — VEGETABLES AND FIELD CROPS
+
+FUNGAL DISEASES
+
+Early Blight (Alternaria solani)
+Crops affected: Tomato, Potato, Brinjal
+Symptoms: Dark brown spots with concentric rings (target-board pattern) on lower/older leaves. Yellow halo around spots.
+Favorable conditions: Warm temperature (24-29°C), high humidity, rainy weather.
+Management:
+- Remove and destroy infected leaves
+- Apply Mancozeb 75WP @ 2g/L water
+- Apply Copper Oxychloride 50WP @ 3g/L
+- Apply Chlorothalonil @ 2g/L
+- Spray at 10-14 day intervals
+Prevention: Avoid overhead irrigation. Maintain plant spacing. Crop rotation for 2-3 years. Use resistant varieties.
+
+Late Blight (Phytophthora infestans)
+Crops affected: Tomato, Potato
+Symptoms: Water-soaked lesions on leaves turning brown-black. White cottony growth on leaf underside in humid conditions.
+Very destructive — can destroy crop within a week.
+Management:
+- Apply Metalaxyl + Mancozeb @ 2.5g/L
+- Apply Cymoxanil + Mancozeb @ 2.5g/L
+- Apply preventively before disease appearance in humid seasons
+Prevention: Plant resistant varieties. Avoid leaf wetness. Remove infected plants immediately.
+
+Powdery Mildew
+Crops affected: Tomato, Cucumber, Bottle gourd, Wheat
+Symptoms: White powdery coating on leaf surface. Leaves curl and die.
+Management:
+- Sulfur 80WP @ 3g/L water
+- Hexaconazole @ 1ml/L
+- Trifloxystrobin @ 0.5g/L
+Prevention: Improve air circulation. Avoid excess nitrogen.
+
+Damping Off (Pythium, Rhizoctonia)
+Crops affected: Seedlings of all crops
+Symptoms: Seedlings collapse at soil level. Soft stem rot at ground level.
+Management:
+- Treat seeds with Thiram or Captan @ 3g/kg seed
+- Drench soil with Copper Oxychloride @ 3g/L
+Prevention: Avoid overwatering nursery. Use sterile growing media.
+
+BACTERIAL DISEASES
+
+Bacterial Wilt (Ralstonia solanacearum)
+Crops affected: Tomato, Brinjal, Potato, Chilli
+Symptoms: Sudden wilting of entire plant without yellowing. Brown vascular tissue when stem is cut.
+No effective chemical control. Soil-borne pathogen.
+Management:
+- No curative spray available
+- Remove and destroy infected plants immediately
+- Do not compost infected material
+- Soil solarization (cover with clear plastic for 4-6 weeks)
+- Crop rotation with non-solanaceous crops for 3-4 years
+- Use resistant varieties where available (Arka Rakshak for tomato)
+Prevention: Avoid injury to roots. Use certified disease-free transplants.
+
+INSECT PESTS
+
+Leaf Miner (Liriomyza spp.)
+Crops affected: Tomato, Beans, Peas
+Symptoms: Irregular serpentine mines/tunnels on leaf surface. Leaves turn yellow.
+Management:
+- Apply Spinosad @ 0.2ml/L water
+- Apply Abamectin @ 0.5ml/L
+- Apply Cyromazine @ 0.6g/L
+- Use yellow sticky traps @ 10/acre for monitoring
+Prevention: Destroy infected leaves. Parasitic wasps (natural enemies) — avoid broad-spectrum sprays.
+
+Aphids (Aphis gossypii, Myzus persicae)
+Crops affected: Most vegetable crops
+Symptoms: Small green, yellow, or black insects clustered on shoot tips. Sticky honeydew. Sooty mold. Virus transmission.
+Management:
+- Imidacloprid @ 0.3ml/L
+- Thiamethoxam @ 0.4g/L
+- Neem oil @ 3ml/L (organic option)
+- Dimethoate @ 1.5ml/L
+Prevention: Reflective silver mulch repels aphids. Encourage ladybird beetles.
+
+Whitefly (Bemisia tabaci)
+Crops affected: Tomato (important vector of ToLCV virus), Cotton, Beans
+Symptoms: Tiny white flies fly when plant is disturbed. Yellow stippled leaves. Virus transmission.
+Management:
+- Yellow sticky traps @ 15/acre
+- Imidacloprid @ 0.3ml/L (systemic)
+- Spinosad @ 0.2ml/L
+- Neem oil @ 5ml/L
+Prevention: Remove infected plants. Avoid continuous tomato cropping.
+
+Fruit Borer (Helicoverpa armigera)
+Crops affected: Tomato, Cotton, Chickpea
+Symptoms: Circular entry holes in fruits. Larvae found inside fruits.
+Management:
+- Pheromone traps @ 5/acre for monitoring
+- Bacillus thuringiensis (Bt) @ 1g/L (biological)
+- Spinosad @ 0.2ml/L
+- Emamectin benzoate @ 0.4g/L
+Prevention: Destroy infected fruits. Crop rotation.
+
+INTEGRATED PEST MANAGEMENT (IPM) PRINCIPLES
+1. Regular scouting: Visit field twice weekly. Record pest and disease observations.
+2. Economic threshold: Spray only when pest population crosses threshold.
+3. Biological control: Use natural enemies — Trichogramma cards, parasitic wasps.
+4. Cultural control: Crop rotation, resistant varieties, proper spacing, sanitation.
+5. Chemical control: Last resort. Rotate insecticide groups to prevent resistance.
+6. Spray timing: Early morning or evening. Avoid spraying before rain.
+7. Safety: Use PPE when applying chemicals. Follow label instructions.

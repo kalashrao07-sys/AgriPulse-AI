@@ -1,0 +1,364 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>AgriSaarthi AI — Architecture</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#f1f5f1;font-family:-apple-system,"Segoe UI",system-ui,sans-serif;padding:20px}
+.page{width:1160px;min-height:760px;margin:0 auto;background:#fff;border:2.5px solid #1f2328;padding:22px 26px 18px}
+.hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;border-bottom:2px solid #166534;padding-bottom:10px}
+.hdr-left{display:flex;align-items:center;gap:10px}
+.logo{width:38px;height:38px;border-radius:9px;background:#166534;display:flex;align-items:center;justify-content:center;font-size:19px}
+.htitle{font-size:21px;font-weight:800;color:#14532d;line-height:1.1}
+.hsub{font-size:10.5px;color:#57606a;font-weight:500}
+.hright{font-size:10px;color:#57606a;text-align:right}
+.badge{display:inline-block;background:#dcfce7;color:#14532d;border:1px solid #86efac;border-radius:4px;padding:2px 8px;font-size:10px;font-weight:700;margin-bottom:3px}
+.canvas{display:grid;grid-template-columns:158px 1fr 160px;gap:0}
+.col{display:flex;flex-direction:column;gap:9px}
+.col-l{padding-right:10px}
+.col-c{padding:0 10px}
+.col-r{padding-left:10px}
+.box{border-radius:8px;padding:9px 10px;position:relative}
+.lbl{position:absolute;top:-9px;left:9px;font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;background:#fff;padding:0 5px}
+.arr{text-align:center;font-size:11px;font-weight:700;color:#166534;line-height:1}
+/* farmer */
+.b-farmer{border:2px solid #166534;background:#f0fdf4}.b-farmer .lbl{color:#166534}
+.f-icon{font-size:28px;text-align:center;margin-bottom:3px}
+.f-name{font-size:13px;font-weight:700;color:#14532d;text-align:center}
+.f-detail{font-size:9.5px;color:#57606a;text-align:center;line-height:1.5;margin-top:3px}
+/* profile */
+.b-profile{border:1.5px solid #86efac;background:#fff}.b-profile .lbl{color:#166534}
+.pr{font-size:9.5px;color:#1f2328;line-height:1.75}.pr b{color:#166534}
+/* ui */
+.b-ui{border:1.5px solid #86efac;background:#f0fdf4}.b-ui .lbl{color:#166534}
+.ui-row{font-size:9.5px;color:#1f2328;line-height:1.75}
+/* supervisor */
+.b-sup{border:2.5px solid #166534;background:#166534;color:#fff;text-align:center}.b-sup .lbl{color:#86efac;background:#166534}
+.sup-ico{font-size:20px;margin-bottom:2px}
+.sup-t{font-size:14px;font-weight:800}
+.sup-s{font-size:9.5px;color:#86efac;margin-top:2px}
+.tags{display:flex;justify-content:center;gap:5px;margin-top:6px;flex-wrap:wrap}
+.tag{background:#14532d;color:#86efac;border-radius:3px;padding:2px 6px;font-size:8.5px;font-weight:700;border:1px solid #86efac}
+/* agents */
+.agents{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}
+.ac{border-radius:7px;padding:7px 5px;text-align:center;position:relative;border:1.5px solid}
+.ac .lbl{font-size:7.5px}
+.aic{font-size:18px;margin-bottom:2px}
+.an{font-size:10.5px;font-weight:700;line-height:1.2}
+.ah{font-size:8.5px;color:#57606a;margin-top:3px;line-height:1.4}
+.atrig{margin-top:4px;font-size:7.5px;border-radius:3px;padding:1px 4px;display:inline-block;font-weight:600}
+.ac-crop{border-color:#166534;background:#f0fdf4}.ac-crop .lbl{color:#166534}.ac-crop .atrig{background:#dcfce7;color:#14532d}
+.ac-wx{border-color:#1d4ed8;background:#eff6ff}.ac-wx .lbl{color:#1d4ed8}.ac-wx .atrig{background:#dbeafe;color:#1e3a8a}
+.ac-pest{border-color:#dc2626;background:#fef2f2}.ac-pest .lbl{color:#dc2626}.ac-pest .atrig{background:#fee2e2;color:#991b1b}
+.ac-rag{border-color:#7c3aed;background:#f5f3ff}.ac-rag .lbl{color:#7c3aed}.ac-rag .atrig{background:#ede9fe;color:#4c1d95}
+/* connector */
+.conn{display:flex;align-items:center;justify-content:center;height:16px;gap:5px;font-size:8.5px;color:#57606a}
+.cl{flex:1;height:1.5px;background:#86efac}
+.ca{color:#166534;font-size:12px;font-weight:700}
+.clabel{background:#fff;border:1px solid #86efac;border-radius:3px;padding:0 5px;color:#15803d;font-weight:600;font-size:8.5px;white-space:nowrap}
+/* rag */
+.b-rag{border:1.5px solid #7c3aed;background:#faf5ff}.b-rag .lbl{color:#7c3aed}
+.rag-steps{display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin-top:4px}
+.rs{border:1px solid #c4b5fd;background:#ede9fe;border-radius:4px;padding:3px 7px;font-size:9px;font-weight:600;color:#4c1d95;text-align:center;line-height:1.3}
+.ra{font-size:13px;color:#7c3aed;font-weight:700}
+/* llm */
+.llm-row{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.llm{border:2px solid;border-radius:7px;padding:7px 9px;text-align:center;position:relative}
+.llm .lbl{font-size:8.5px}
+.lico{font-size:18px;margin-bottom:1px}
+.lname{font-size:11.5px;font-weight:800}
+.lsub{font-size:8.5px;margin-top:1px}
+.env-tag{margin-top:4px;font-size:8.5px;border-radius:3px;padding:2px 5px;font-weight:600;display:inline-block}
+.llm-loc{border-color:#d97706;background:#fffbeb}.llm-loc .lbl{color:#d97706}.llm-loc .lname{color:#92400e}.llm-loc .lsub{color:#d97706}.llm-loc .env-tag{background:#fef3c7;color:#92400e}
+.llm-ibm{border-color:#1d4ed8;background:#eff6ff}.llm-ibm .lbl{color:#0f172a}.llm-ibm .lname{color:#1e3a8a}.llm-ibm .lsub{color:#1d4ed8}.llm-ibm .env-tag{background:#dbeafe;color:#1e3a8a}
+.ibm-b{font-size:13px;font-weight:900;color:#1d4ed8;letter-spacing:-1px}
+/* env note */
+.env-note{border:1.5px dashed #d97706;border-radius:6px;padding:5px 9px;background:#fffbeb;font-size:9px;color:#92400e}
+.env-note b{color:#d97706}
+/* output */
+.b-out{border:2px solid #166534;background:#f0fdf4}.b-out .lbl{color:#166534}
+.o-row{font-size:9.5px;color:#1f2328;line-height:1.8}
+/* db */
+.b-db{border:1.5px solid #6d28d9;background:#f5f3ff}.b-db .lbl{color:#6d28d9}
+.db-t{font-size:9px;color:#4c1d95;line-height:1.8}
+/* fallback */
+.b-fb{border:1.5px dashed #d97706;border-radius:8px;padding:8px 9px;background:#fffbeb;position:relative}
+.b-fb .lbl{color:#d97706}
+.fb-r{font-size:9px;color:#92400e;line-height:1.75}
+/* docker */
+.b-docker{border:1.5px solid #e5e7eb;background:#f8fafc}.b-docker .lbl{color:#57606a}
+.d-row{font-size:9.5px;color:#1f2328;line-height:1.8}
+/* legend */
+.legend{display:flex;align-items:center;gap:14px;margin-top:12px;padding-top:9px;border-top:1px solid #e5e7eb;flex-wrap:wrap}
+.lt{font-size:10px;font-weight:700;color:#57606a;margin-right:3px}
+.li{display:flex;align-items:center;gap:5px;font-size:9.5px;color:#57606a}
+.ld{width:11px;height:11px;border-radius:3px}
+.farr{text-align:center;font-size:11px;font-weight:700;color:#6d28d9;line-height:1}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="hdr">
+    <div class="hdr-left">
+      <div class="logo">🌱</div>
+      <div>
+        <div class="htitle">AgriSaarthi AI — System Architecture</div>
+        <div class="hsub">Multi-Agent Smart Farming Advisory System · Problem Statement 14 · AI Agent for Smart Farming Advice</div>
+      </div>
+    </div>
+    <div class="hright">
+      <div class="badge">IBM Granite Ready</div><br />
+      <span>Ollama + Llama (local) → watsonx.ai + Granite (production)</span>
+    </div>
+  </div>
+
+  <div class="canvas">
+
+    
+    <div class="col col-l">
+
+      <div class="box b-farmer">
+        <div class="lbl">👨‍🌾 FARMER</div>
+        <div style="height:6px"></div>
+        <div class="f-icon">👨‍🌾</div>
+        <div class="f-name">Ramesh</div>
+        <div class="f-detail">Belagavi, Karnataka<br />2.4 acres · Tomato crop<br />45 days · Drip irrigation</div>
+      </div>
+
+      <div class="arr">↓ enters query</div>
+
+      <div class="box b-profile">
+        <div class="lbl">⚙ FARM PROFILE</div>
+        <div style="height:6px"></div>
+        <div class="pr"><b>Crop:</b> Tomato</div>
+        <div class="pr"><b>Age:</b> 45 days</div>
+        <div class="pr"><b>Stage:</b> Flowering</div>
+        <div class="pr"><b>Soil:</b> Loamy</div>
+        <div class="pr"><b>Irrigation:</b> Drip</div>
+        <div class="pr"><b>Rain %:</b> 78%</div>
+        <div class="pr"><b>Moisture:</b> 64%</div>
+        <div class="pr"><b>Temp:</b> 29°C</div>
+      </div>
+
+      <div class="arr">↓ with context</div>
+
+      <div class="box b-ui">
+        <div class="lbl">📱 USER INTERFACE</div>
+        <div style="height:6px"></div>
+        <div class="ui-row">🏠 Landing Page</div>
+        <div class="ui-row">📊 Dashboard</div>
+        <div class="ui-row">💬 AI Advisor</div>
+        <div class="ui-row">🔬 Crop Health</div>
+        <div class="ui-row">🌤 Weather</div>
+        <div class="ui-row">📅 Farm Timeline</div>
+        <div style="font-size:8.5px;color:#57606a;margin-top:4px;border-top:1px solid #86efac;padding-top:3px">React + Vite + Tailwind CSS</div>
+      </div>
+
+    </div>
+
+    
+    <div class="col col-c">
+
+      <div class="box b-sup">
+        <div class="lbl">🤖 FARM SUPERVISOR</div>
+        <div style="height:6px"></div>
+        <div class="sup-ico">🤖</div>
+        <div class="sup-t">Farm Supervisor Agent</div>
+        <div class="sup-s">Receives query · Selects specialist agents · Synthesises final recommendation</div>
+        <div class="tags">
+          <span class="tag">keyword routing</span>
+          <span class="tag">parallel execution</span>
+          <span class="tag">result synthesis</span>
+          <span class="tag">FastAPI · Python</span>
+        </div>
+      </div>
+
+      <div class="conn">
+        <div class="cl"></div>
+        <div class="ca">↓</div>
+        <div class="clabel">routes to specialist agents</div>
+        <div class="ca">↓</div>
+        <div class="cl"></div>
+      </div>
+
+      <div class="agents">
+
+        <div class="ac ac-crop">
+          <div class="lbl">🌱 CROP AGENT</div>
+          <div style="height:7px"></div>
+          <div class="aic">🌱</div>
+          <div class="an">Crop Advisory</div>
+          <div class="ah">Growth stages<br />Fertilizer schedule<br />Harvest advice<br />Soil nutrients</div>
+          <div class="atrig">fertilize · harvest · grow</div>
+        </div>
+
+        <div class="ac ac-wx">
+          <div class="lbl">🌦 WEATHER AGENT</div>
+          <div style="height:7px"></div>
+          <div class="aic">🌦</div>
+          <div class="an">Weather &amp; Irrigation</div>
+          <div class="ah">Rain probability<br />Temperature<br />Soil moisture<br />Irrigate / Delay</div>
+          <div class="atrig">irrigate · water · rain</div>
+        </div>
+
+        <div class="ac ac-pest">
+          <div class="lbl">🐛 PEST AGENT</div>
+          <div style="height:7px"></div>
+          <div class="aic">🐛</div>
+          <div class="an">Pest &amp; Disease</div>
+          <div class="ah">Disease detection<br />Pest identification<br />Treatment advice<br />Image analysis *</div>
+          <div class="atrig">disease · leaf · blight</div>
+        </div>
+
+        <div class="ac ac-rag">
+          <div class="lbl">📚 RAG AGENT</div>
+          <div style="height:7px"></div>
+          <div class="aic">📚</div>
+          <div class="an">Agricultural RAG</div>
+          <div class="ah">Knowledge retrieval<br />pgvector search<br />Source citation<br />Always active</div>
+          <div class="atrig">always activated</div>
+        </div>
+
+      </div>
+
+      <div class="conn">
+        <div class="cl"></div>
+        <div class="ca">↓</div>
+        <div class="clabel">retrieved context + agent outputs</div>
+        <div class="ca">↓</div>
+        <div class="cl"></div>
+      </div>
+
+      <div class="box b-rag">
+        <div class="lbl">🔍 RAG PIPELINE — pgvector Similarity Search</div>
+        <div class="rag-steps">
+          <div class="rs">📄 Agri Docs<br /><span style="font-size:7.5px;font-weight:400">4 knowledge files</span></div>
+          <div class="ra">→</div>
+          <div class="rs">✂ Chunking<br /><span style="font-size:7.5px;font-weight:400">400 chars · overlap</span></div>
+          <div class="ra">→</div>
+          <div class="rs">🔢 Embeddings<br /><span style="font-size:7.5px;font-weight:400">MiniLM · 384-dim</span></div>
+          <div class="ra">→</div>
+          <div class="rs">🗄 pgvector<br /><span style="font-size:7.5px;font-weight:400">cosine similarity</span></div>
+          <div class="ra">→</div>
+          <div class="rs">📎 Top-4 Chunks<br /><span style="font-size:7.5px;font-weight:400">injected to prompt</span></div>
+        </div>
+      </div>
+
+      <div class="conn">
+        <div class="cl"></div>
+        <div class="ca">↓</div>
+        <div class="clabel">grounded prompt sent to LLM</div>
+        <div class="ca">↓</div>
+        <div class="cl"></div>
+      </div>
+
+      <div class="llm-row">
+
+        <div class="llm llm-loc">
+          <div class="lbl">⚡ LOCAL — DEFAULT</div>
+          <div style="height:5px"></div>
+          <div class="lico">⚡</div>
+          <div class="lname">Ollama + Llama</div>
+          <div class="lsub">llama3.2:3b · 2.0 GB<br />Runs 100% offline</div>
+          <div class="env-tag">AI_PROVIDER=ollama</div>
+        </div>
+
+        <div class="llm llm-ibm">
+          <div class="lbl">🌐 PRODUCTION</div>
+          <div style="height:5px"></div>
+          <div class="ibm-b">IBM</div>
+          <div class="lname">watsonx.ai + Granite</div>
+          <div class="lsub">granite-13b-instruct-v2<br />Guardrails · Safe output</div>
+          <div class="env-tag">AI_PROVIDER=ibm</div>
+        </div>
+
+      </div>
+
+      <div class="env-note">
+        <b>Provider Switch:</b> Set <code>AI_PROVIDER=ibm</code> + add <code>IBM_WATSONX_API_KEY</code> &amp; <code>IBM_WATSONX_PROJECT_ID</code> in environment.
+        No agent code changes needed — abstraction layer handles it transparently.
+      </div>
+
+    </div>
+
+    
+    <div class="col col-r">
+
+      <div class="box b-out">
+        <div class="lbl">✅ FARM RECOMMENDATION</div>
+        <div style="height:6px"></div>
+        <div class="o-row">📋 Main recommendation</div>
+        <div class="o-row">❓ Why (key factors)</div>
+        <div class="o-row">🔢 Action steps</div>
+        <div class="o-row">✓ Agents consulted</div>
+        <div class="o-row">📎 Sources cited</div>
+        <div class="o-row">📊 Confidence level</div>
+        <div style="color:#57606a;font-size:8.5px;margin-top:4px;border-top:1px solid #86efac;padding-top:3px">Shown in AI Advisor chat UI</div>
+      </div>
+
+      <div class="farr">↓ saved to</div>
+
+      <div class="box b-db">
+        <div class="lbl">🗄 POSTGRESQL + pgvector</div>
+        <div style="height:6px"></div>
+        <div class="db-t">📋 ai_recommendations</div>
+        <div class="db-t">🌱 farms &amp; crops</div>
+        <div class="db-t">🌦 weather_records</div>
+        <div class="db-t">💧 soil_records</div>
+        <div class="db-t">🐛 crop_health</div>
+        <div class="db-t">📚 knowledge_chunks</div>
+        <div style="font-size:8px;color:#7c3aed;padding-left:12px">vector(384) · 48 rows</div>
+        <div class="db-t">⚙ agent_runs</div>
+        <div class="db-t">📅 farm_timeline</div>
+        <div style="font-size:8px;color:#6d28d9;margin-top:3px">11 tables total</div>
+      </div>
+
+      <div class="farr">↓</div>
+
+      <div class="b-fb">
+        <div class="lbl">⚠ GRACEFUL FALLBACKS</div>
+        <div style="height:6px"></div>
+        <div class="fb-r">🌤 No weather API?</div>
+        <div style="font-size:8.5px;color:#57606a;padding-left:10px;line-height:1.5">→ Demo data (labelled)</div>
+        <div class="fb-r">🤖 LLM unavailable?</div>
+        <div style="font-size:8.5px;color:#57606a;padding-left:10px;line-height:1.5">→ Rule-based answer</div>
+        <div class="fb-r">🔬 No vision model?</div>
+        <div style="font-size:8.5px;color:#57606a;padding-left:10px;line-height:1.5">→ Demo analysis *</div>
+        <div class="fb-r">🌐 No IBM creds?</div>
+        <div style="font-size:8.5px;color:#57606a;padding-left:10px;line-height:1.5">→ Auto-use Ollama</div>
+      </div>
+
+      <div class="box b-docker">
+        <div class="lbl">🐳 DOCKER COMPOSE</div>
+        <div style="height:6px"></div>
+        <div class="d-row">🟢 agrisaarthi-postgres</div>
+        <div class="d-row">🟢 agrisaarthi-ollama</div>
+        <div class="d-row">🟢 agrisaarthi-backend</div>
+        <div class="d-row">🟢 agrisaarthi-frontend</div>
+        <div style="font-size:8.5px;color:#57606a;margin-top:3px;font-style:italic">docker compose up --build</div>
+      </div>
+
+    </div>
+  </div>
+
+  
+  <div class="legend">
+    <span class="lt">Legend:</span>
+    <div class="li"><div class="ld" style="background:#166534"></div>Core Agents / Supervisor</div>
+    <div class="li"><div class="ld" style="background:#d97706"></div>LLM Layer (Local)</div>
+    <div class="li"><div class="ld" style="background:#1d4ed8"></div>IBM Granite (Production)</div>
+    <div class="li"><div class="ld" style="background:#7c3aed"></div>RAG / pgvector</div>
+    <div class="li"><div class="ld" style="background:#dc2626"></div>Pest &amp; Disease</div>
+    <div class="li"><div class="ld" style="background:#fffbeb;border:1px dashed #d97706"></div>Fallback / Optional</div>
+    <div style="margin-left:auto;font-size:9px;color:#57606a">* Image analysis uses demo mode — no real vision model required</div>
+  </div>
+
+  <div style="text-align:center;font-size:10px;color:#57606a;margin-top:8px;border-top:1px solid #e5e7eb;padding-top:7px">
+    Made with IBM Bob  ·  AgriSaarthi AI v1.0  ·  Problem Statement 14 — AI Agent for Smart Farming Advice
+  </div>
+
+</div>
+</body>
+</html>

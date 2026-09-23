@@ -1,0 +1,78 @@
+IRRIGATION AND WATER MANAGEMENT FOR INDIAN FARMERS
+
+IMPORTANCE OF IRRIGATION MANAGEMENT
+Water is the most critical input for crop production. Improper irrigation leads to:
+- Over-irrigation: Root rot, nutrient leaching, disease outbreaks, waterlogging
+- Under-irrigation: Wilting, yield reduction, poor fruit quality
+
+SOIL MOISTURE AND IRRIGATION SCHEDULING
+
+Field Capacity (FC): Maximum water soil can hold after drainage — 100% FC.
+Permanent Wilting Point (PWP): Minimum moisture at which plants can survive.
+Available Water Capacity (AWC) = FC - PWP
+
+Optimal crop growth: 50-80% of field capacity maintained.
+Irrigation trigger: When soil moisture falls below 50% AWC.
+Irrigation stop: When soil moisture reaches 80% AWC.
+
+WHEN TO DELAY IRRIGATION
+1. Rain is expected (probability > 60%) in next 24-48 hours
+2. Soil moisture is above 65-70%
+3. Recent heavy rainfall received
+4. Crop showing no water stress signs
+5. Cloudy cool weather (low evapotranspiration)
+
+WHEN TO IRRIGATE
+1. Soil moisture below 40-45%
+2. Morning wilting observed in plants
+3. No rain expected for 7+ days
+4. High temperature (above 35°C) and low humidity
+5. Critical crop stages: flowering, fruit fill
+
+IRRIGATION METHODS COMPARISON
+Flood Irrigation: Low cost, high water use (1000-1500mm/season). Risk of waterlogging.
+Furrow Irrigation: Moderate efficiency. Good for row crops.
+Sprinkler Irrigation: 70-80% efficiency. Good for field crops.
+Drip Irrigation: 90-95% efficiency. Best for vegetables and orchards. Reduces disease.
+
+DRIP IRRIGATION MANAGEMENT
+Installation: Laterals at 60cm spacing for tomato. Emitters at 30-45cm intervals.
+Flow rate: 2-4 liters/hour per emitter depending on crop stage.
+Daily operation: Run drip for 1-3 hours depending on soil moisture and temperature.
+Fertigation: Inject soluble fertilizers through drip system.
+Maintenance: Flush laterals weekly. Check emitters for clogging monthly.
+
+CROP WATER REQUIREMENTS (mm/week)
+Tomato: Seedling 10-15mm, Vegetative 20-25mm, Flowering 35-40mm, Fruiting 25-30mm
+Rice: 50-80mm/week (standing water maintained)
+Wheat: 20-30mm/week
+Maize: 25-35mm/week
+Cotton: 30-40mm/week
+
+RAINFALL AND IRRIGATION
+Karnataka receives:
+- Kharif season (June-September): 600-900mm rainfall
+- Rabi season (October-February): 100-200mm rainfall
+
+Use rainwater harvesting ponds during monsoon.
+Check IMD (India Meteorological Department) forecasts for planning.
+
+SOIL MOISTURE MONITORING
+Feel method:
+- Dry: Sandy feel, no moist appearance → Below 25% FC → Irrigate immediately
+- Moist: Forms a ball when squeezed → 50-70% FC → Good moisture
+- Wet: Water squeezes out easily → Above 80% FC → Delay irrigation
+- Saturated: Standing water → Waterlogged → Stop all irrigation
+
+IMPACT OF WEATHER ON IRRIGATION
+High temperature (>35°C): Increase irrigation frequency by 20-30%.
+Low humidity (<40%): Evapotranspiration is high — more irrigation needed.
+Wind speed >15km/h: Increases water loss — irrigate in morning to reduce evaporation.
+Rain probability >70%: Delay irrigation. Use forecasted rainfall.
+
+WATER CONSERVATION TIPS
+1. Mulching (straw or plastic): Reduces soil moisture evaporation by 30-40%.
+2. Drip over flood: Saves 40-50% water.
+3. Irrigate in morning: Reduces evaporation losses.
+4. Check soil before irrigating: Never irrigate on schedule alone — check moisture.
+5. Avoid waterlogging: Ensures oxygen availability for roots.
