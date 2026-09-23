@@ -30,7 +30,7 @@ export default function Layout() {
             <Sprout className="w-5 h-5 text-white" />
           </div>
           <div>
-            <div className="font-bold text-white text-lg leading-tight">AgriSaarthi</div>
+            <div className="font-bold text-white text-lg leading-tight">AgriPulse</div>
             <div className="text-forest-300 text-xs">Smart Advice. Better Farming.</div>
           </div>
         </div>
@@ -72,7 +72,7 @@ export default function Layout() {
           >
             ⚙ Farm Setup
           </button>
-          <div className="text-forest-600 text-xs mt-1">AgriSaarthi AI v1.0</div>
+          <div className="text-forest-600 text-xs mt-1">AgriPulse AI v1.0</div>
         </div>
       </aside>
 
@@ -96,7 +96,7 @@ export default function Layout() {
           </button>
           <div className="flex items-center gap-2">
             <Sprout className="w-5 h-5 text-forest-600" />
-            <span className="font-bold text-forest-800">AgriSaarthi</span>
+            <span className="font-bold text-forest-800">AgriPulse</span>
           </div>
         </header>
 

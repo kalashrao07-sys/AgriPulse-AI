@@ -27,7 +27,7 @@ export default function Advisor() {
     {
       id: '0',
       role: 'assistant',
-      content: "Hello! I'm AgriSaarthi AI, your personal farm advisor. Ask me anything about your crops, irrigation, fertilizers, or diseases. I'll consult our specialist agents and provide you with the best advice.",
+      content: "Hello! I'm AgriPulse AI, your personal farm advisor. Ask me anything about your crops, irrigation, fertilizers, or diseases. I'll consult our specialist agents and provide you with the best advice.",
     },
   ]);
   const [input, setInput] = useState('');
@@ -97,7 +97,7 @@ export default function Advisor() {
           <Bot className="w-6 h-6 text-white" />
         </div>
         <div>
-          <div className="font-bold text-gray-900">AgriSaarthi AI Advisor</div>
+          <div className="font-bold text-gray-900">AgriPulse AI Advisor</div>
           <div className="text-xs text-gray-500">
             {farm ? `Farm: ${farm.crop_name} · ${farm.location}` : 'Powered by Ollama + Llama'}
           </div>

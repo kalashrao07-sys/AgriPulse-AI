@@ -8,7 +8,7 @@ from app.agents import pest_agent
 import os
 
 router = APIRouter()
-UPLOAD_DIR = "/tmp/agrisaarthi_uploads"
+UPLOAD_DIR = "/tmp/agripulse_uploads"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 

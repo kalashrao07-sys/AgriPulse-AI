@@ -21,7 +21,7 @@ export default function LandingPage() {
               <Sprout className="w-5 h-5 text-white" />
             </div>
             <div>
-              <span className="font-bold text-forest-800 text-lg">AgriSaarthi AI</span>
+              <span className="font-bold text-forest-800 text-lg">AgriPulse AI</span>
             </div>
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm text-gray-600">
@@ -52,7 +52,7 @@ export default function LandingPage() {
             <span className="text-forest-600">Your AI Advisor.</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-            AgriSaarthi combines crop knowledge, weather information, soil data and AI agents
+            AgriPulse combines crop knowledge, weather information, soil data and AI agents
             to provide personalized farming advice — powered by Ollama + Llama locally,
             and IBM watsonx.ai + Granite for deployment.
           </p>
@@ -79,7 +79,7 @@ export default function LandingPage() {
       {/* Architecture Diagram */}
       <section id="how-it-works" className="bg-forest-50 py-16">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-2xl font-bold text-gray-900 mb-2 text-center">How AgriSaarthi Works</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-2 text-center">How AgriPulse Works</h2>
           <p className="text-gray-600 text-center mb-12">Multi-agent AI system routing your question to the right specialists</p>
 
           <div className="flex flex-col items-center gap-0 max-w-sm mx-auto">
@@ -139,7 +139,7 @@ export default function LandingPage() {
       {/* Features */}
       <section id="features" className="py-16">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-2xl font-bold text-gray-900 mb-2 text-center">What AgriSaarthi Does</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-2 text-center">What AgriPulse Does</h2>
           <p className="text-gray-600 text-center mb-12">Four specialized AI agents working together for your farm</p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -217,7 +217,7 @@ export default function LandingPage() {
       <footer className="border-t border-gray-200 py-6 text-center text-sm text-gray-500">
         <div className="flex items-center justify-center gap-2 mb-1">
           <Sprout className="w-4 h-4 text-forest-600" />
-          <span className="font-medium text-forest-700">AgriSaarthi AI</span>
+          <span className="font-medium text-forest-700">AgriPulse AI</span>
         </div>
         <p>Hackathon Project — Problem Statement 14 · AI Agent for Smart Farming Advice</p>
         <p className="mt-1">Built with Ollama + Llama · IBM watsonx.ai + Granite ready</p>

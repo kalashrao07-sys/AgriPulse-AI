@@ -1,5 +1,5 @@
 """
-AgriSaarthi AI — FastAPI Backend
+AgriPulse AI — FastAPI Backend
 Smart Advice. Better Farming.
 """
 from fastapi import FastAPI
@@ -14,7 +14,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 app = FastAPI(
-    title="AgriSaarthi AI",
+    title="AgriPulse AI",
     description="AI-powered farming advisory system using Ollama/Llama locally and IBM watsonx.ai/Granite for production.",
     version="1.0.0",
 )
@@ -41,7 +41,7 @@ app.include_router(health.router, prefix="/api", tags=["System"])
 @app.on_event("startup")
 async def startup_event():
     """Initialize database and seed knowledge base on startup."""
-    logger.info("🌱 AgriSaarthi AI starting up...")
+    logger.info("🌱 AgriPulse AI starting up...")
 
     # Create tables if not exists
     try:
@@ -57,7 +57,7 @@ async def startup_event():
     except Exception as e:
         logger.warning(f"⚠️  Knowledge base seeding skipped: {e}")
 
-    logger.info("🚀 AgriSaarthi AI is ready!")
+    logger.info("🚀 AgriPulse AI is ready!")
 
 
 async def seed_knowledge_base():
@@ -202,7 +202,7 @@ Harvest: When grain moisture is 12-14%. Combine harvesting preferred.""",
 @app.get("/")
 def root():
     return {
-        "name": "AgriSaarthi AI",
+        "name": "AgriPulse AI",
         "tagline": "Smart Advice. Better Farming.",
         "version": "1.0.0",
         "docs": "/docs",

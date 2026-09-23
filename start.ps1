@@ -1,9 +1,9 @@
 #!/usr/bin/env pwsh
-# AgriSaarthi AI - Quick Start Script (PowerShell)
+# AgriPulse AI - Quick Start Script (PowerShell)
 # Usage: .\start.ps1
 
 Write-Host ""
-Write-Host "🌱 AgriSaarthi AI - Starting..." -ForegroundColor Green
+Write-Host "🌱 AgriPulse AI - Starting..." -ForegroundColor Green
 Write-Host "Smart Advice. Better Farming." -ForegroundColor DarkGreen
 Write-Host ""
 
@@ -33,11 +33,11 @@ Start-Sleep -Seconds 15
 # Pull Llama model
 Write-Host ""
 Write-Host "🤖 Pulling Llama model (llama3.2:3b) — this may take a few minutes on first run..." -ForegroundColor Cyan
-docker exec agrisaarthi-ollama ollama pull llama3.2:3b
+docker exec agripulse-ollama ollama pull llama3.2:3b
 
 Write-Host ""
 Write-Host "═══════════════════════════════════════" -ForegroundColor Green
-Write-Host "✅ AgriSaarthi AI is ready!" -ForegroundColor Green
+Write-Host "✅ AgriPulse AI is ready!" -ForegroundColor Green
 Write-Host ""
 Write-Host "🌐 Frontend:  http://localhost:5173" -ForegroundColor White
 Write-Host "📡 Backend:   http://localhost:8000" -ForegroundColor White

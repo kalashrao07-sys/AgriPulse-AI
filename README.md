@@ -1,4 +1,4 @@
-# 🌱 AgriSaarthi AI
+# 🌱 AgriPulse AI
 
 > **Smart Advice. Better Farming.**
 
@@ -14,7 +14,7 @@ Hackathon Project — Problem Statement 14: AI Agent for Smart Farming Advice.
 
 ### 1. Clone / enter the project
 ```bash
-cd AgriSaarthi
+cd AgriPulse
 ```
 
 ### 2. Start all services
@@ -24,7 +24,7 @@ docker compose up --build
 
 ### 3. Pull the Llama model (first time only)
 ```bash
-docker exec agrisaarthi-ollama ollama pull llama3.2:3b
+docker exec agripulse-ollama ollama pull llama3.2:3b
 ```
 
 ### 4. Open the app
@@ -124,7 +124,7 @@ IBM_GRANITE_MODEL=ibm/granite-13b-instruct-v2
 ## 📁 Project Structure
 
 ```
-AgriSaarthi/
+AgriPulse/
 ├── docker-compose.yml
 ├── scripts/
 │   └── init.sql              ← DB init + demo seed data
@@ -306,4 +306,4 @@ npm run dev
 
 ---
 
-Made with ❤️ for Indian farmers · AgriSaarthi AI v1.0
+Made with ❤️ for Indian farmers · AgriPulse AI v1.0

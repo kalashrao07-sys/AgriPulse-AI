@@ -3,7 +3,7 @@ from typing import Optional
 
 
 class Settings(BaseSettings):
-    DATABASE_URL: str = "postgresql://agrisaarthi:agrisaarthi123@localhost:5432/agrisaarthi"
+    DATABASE_URL: str = "postgresql://agripulse:agripulse123@localhost:5432/agripulse"
     OLLAMA_BASE_URL: str = "http://localhost:11434"
     OLLAMA_MODEL: str = "llama3.2:3b"
     AI_PROVIDER: str = "ollama"  # "ollama" or "ibm"

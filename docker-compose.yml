@@ -1,25 +1,25 @@
 services:
   postgres:
     image: pgvector/pgvector:pg16
-    container_name: agrisaarthi-postgres
+    container_name: agripulse-postgres
     environment:
-      POSTGRES_USER: agrisaarthi
-      POSTGRES_PASSWORD: agrisaarthi123
-      POSTGRES_DB: agrisaarthi
+      POSTGRES_USER: agripulse
+      POSTGRES_PASSWORD: agripulse123
+      POSTGRES_DB: agripulse
     ports:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U agrisaarthi"]
+      test: ["CMD-SHELL", "pg_isready -U agripulse"]
       interval: 10s
       timeout: 5s
       retries: 5
 
   ollama:
     image: ollama/ollama:latest
-    container_name: agrisaarthi-ollama
+    container_name: agripulse-ollama
     ports:
       - "11434:11434"
     volumes:
@@ -36,11 +36,11 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    container_name: agrisaarthi-backend
+    container_name: agripulse-backend
     ports:
       - "8000:8000"
     environment:
-      DATABASE_URL: postgresql://agrisaarthi:agrisaarthi123@postgres:5432/agrisaarthi
+      DATABASE_URL: postgresql://agripulse:agripulse123@postgres:5432/agripulse
       OLLAMA_BASE_URL: http://ollama:11434
       OLLAMA_MODEL: llama3.2:3b
       AI_PROVIDER: ollama
@@ -62,7 +62,7 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    container_name: agrisaarthi-frontend
+    container_name: agripulse-frontend
     ports:
       - "5173:5173"
     environment:
